@@ -6,8 +6,8 @@
 </head>
 
 	<body ng-app="myApp">
-			<div ng-controller="myController">
-				{{ nome }} {{ numero }}
+			<div ng-controller="myController as cliente">
+				{{ cliente.name }}
 			</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js" ></script>
 		<script src="app.js"></script>

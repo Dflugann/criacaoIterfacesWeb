@@ -1,14 +1,6 @@
-angular.module('myApp').controller('myController', ['$scope', '$interval' , function ($scope, $interval) {
-	$scope.nome = 'Flavio Santos';
-	$scope.numero = 0;
+angular.module('myApp').controller('myController', myController);
 
-	// $interval(function () {
-	// 	$scope.numero++;
-	// }, 1000);
-
-	setInterval(function (){
-		$scope.$apply(function (){
-			$scope.numero++;
-		})
-	}, 1000);
-}])
+function myController() {
+	var vm = this;
+	vm.name = "Flavio Santos";
+}
